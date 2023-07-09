@@ -1,0 +1,31 @@
+<nav class="navbar bg-light">
+    <div class="container-fluid">
+      <button class="btn btn-info" routerLink="/list">Home</button>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+  <form [formGroup]="googleSheetForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" formControlName="name">
+    </div>
+
+    <div class="mb-3">
+        <label for="platform" class="form-label">Platform</label>
+        <input type="text" class="form-control" id="Platform" formControlName="platform">
+      </div>
+
+      <div class="mb-3">
+        <label for="technology" class="form-label">Technology</label>
+        <input type="text" class="form-control" id="technology" formControlName="technology">
+      </div>
+      
+      <div class="mb-3">
+        <label for="link" class="form-label">Link</label>
+        <input type="text" class="form-control" id="link" formControlName="link">
+      </div>
+
+    <button  class="btn btn-primary">Submit</button>
+  </form>
+</div>
